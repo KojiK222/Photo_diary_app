@@ -1,0 +1,22 @@
+
+.header__contents
+  .Photo-diary__text
+    Photo diary
+
+.SignIn__contents
+  .SignIn__contents__main
+    .SignIn_form
+      = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| 
+        .login__content
+          .login__content__title
+            ログイン
+
+        .Form_field
+          = f.email_field :email, placeholder: "メールアドレス"
+
+        .Form_field 
+          = f.password_field :password, placeholder: "パスワード"
+
+        .actions
+          = f.submit "ログイン"
+
