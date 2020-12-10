@@ -1,3 +1,4 @@
+//ログインページ
 
 .header__contents
   .Photo-diary__text
@@ -8,11 +9,9 @@
   .SignIn__contents__main
     .SignIn_form
       = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| 
-        .login__content
-          .login__content__title
+        .login__contents
+          .login__contents__title
             ログイン
-        .login__text
-          メールアドレスでログイン
         
         .login__facebook
           .sns__icon
@@ -25,9 +24,12 @@
             = icon('fab', 'twitter', class: "twitter-icon")
           .sns__text
             = link_to "Twitterでログイン", "#", class: "twitter-btn"
+        
+        .login__text
+          メールアドレスでログイン
 
         .Form__field
-          = f.email_field :email, placeholder: "メールアドレス", class: "input__field"
+          = f.email_field :email, placeholder: "メールアドレス", autofocus: true, class: "input__field"
 
         .Form__field 
           = f.password_field :password, placeholder: "パスワード", class: "input__field"

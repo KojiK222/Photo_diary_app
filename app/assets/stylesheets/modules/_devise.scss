@@ -44,6 +44,8 @@
   text-align: center;
 }
 
+// ログインホーム
+
 .SignIn__contents {
   height: 452px;
   width: 940px;
@@ -60,7 +62,7 @@
   border-radius: 4px;
 }
 
-.login__content {
+.login__contents {
   height: 28px;
   width: 310px;
   margin-bottom: 15px;
@@ -131,6 +133,8 @@
   }
 }
 
+//ログインボタン
+
 .login__btn {
   background-color: #FFABCE;
   height: 33px;
@@ -142,4 +146,70 @@
   font-weight: bold;
   cursor: pointer;
   margin: 10px 80px 0;
+}
+
+//新規会員登録ページ
+
+.SignUp__contents {
+  height: 452px;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.SignUp_form {
+  height: 500px;
+  width: 360px;
+  margin: 0 auto;
+  padding: 24px;
+  border: 1px solid #e6e6e6;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.registration__contents {
+  height: 28px;
+  width: 310px;
+  margin-bottom: 25px;
+  &__title {
+    height: 28px;
+    width: 310px;
+    padding: 0px 57px;
+    text-align: center;
+    display: flex;
+    .Photo__diary {
+      font-size: 20px;
+      font-family: cursive;
+      font-weight: bold;
+    }
+    .registration__text {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+}
+
+//タイトル下のメッセージ
+
+.registration__message {
+  width: 310px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  color: #8e8e8e;
+}
+
+//新規会員登録ボタン
+
+.registration__btn {
+  width: 310px;
+  background-color: #FFABCE;
+  height: 33px;
+  border: 1px solid #FFABCE;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 20px 0 0;
 }

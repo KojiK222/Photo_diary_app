@@ -1,0 +1,52 @@
+//新規会員登録ページ
+
+.header__contents
+  .Photo-diary__text
+    = icon('fas', 'camera-retro', class: "icon-camera")
+    Photo diary
+
+.SignUp__contents
+  .SignUp_form
+    = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+      .registration__contents
+        .registration__contents__title
+          .Photo__diary Photo diary
+          .registration__text に登録する
+      
+      .registration__message
+        写真と文字で思い出を残そう
+
+      .login__facebook
+        .sns__icon
+          = icon('fab', 'facebook-f', class: "facebook-icon")
+        .sns__text
+          = link_to "Facabookでログイン", "#", class: "facebook-btn"
+        
+      .login__twitter
+        .sns__icon
+          = icon('fab', 'twitter', class: "twitter-icon")
+        .sns__text
+          = link_to "Twitterでログイン", "#", class: "twitter-btn"
+
+      .Form__field
+        = f.email_field :email, placeholder: "メールアドレス", autofocus: true, autocomplete: "email", class: "input__field"
+      
+      .Form__field 
+        = f.text_field :fullname, placeholder: "フルネーム", class: "input__field"
+      
+      .Form__field 
+        = f.text_field :username, placeholder: "ユーザーネーム", class: "input__field"
+
+      .Form__field 
+        = f.password_field :password, placeholder: "パスワード", autocomplete: "new-password", class: "input__field"
+        -# if @minimum_password_length 
+        -#   = @minimum_password_length characters minimum
+
+      -# .Form__field 
+      -#   = f.password_field :password, placeholder: "パスワードの確認", autocomplete: "new-password", class: "input__field"
+
+      .actions
+        = f.submit "新規会員登録", class: "registration__btn"
+
+-# render "devise/shared/links"
+-# = render "devise/shared/error_messages", resource: resource 
