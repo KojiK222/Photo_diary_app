@@ -32,7 +32,7 @@
           = f.email_field :email, placeholder: "メールアドレス", autofocus: true, class: "input__field"
 
         .Form__field 
-          = f.password_field :password, placeholder: "パスワード", class: "input__field"
+          = f.password_field :password, placeholder: "パスワード", autocomplete: "off", class: "input__field"
         .forgot__password
           = link_to "パスワードを忘れた方", "#", class: "forgot__link"
 

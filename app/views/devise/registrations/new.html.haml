@@ -38,7 +38,7 @@
         = f.text_field :username, placeholder: "ユーザーネーム", class: "input__field"
 
       .Form__field 
-        = f.password_field :password, placeholder: "パスワード", autocomplete: "new-password", class: "input__field"
+        = f.password_field :password, placeholder: "パスワード", autocomplete: "off", class: "input__field"
         -# if @minimum_password_length 
         -#   = @minimum_password_length characters minimum
 
@@ -47,6 +47,12 @@
 
       .actions
         = f.submit "新規会員登録", class: "registration__btn"
+
+  .SignUp__to__login
+    .SignUp__to__login__text
+      .acount__has
+        アカウントはお持ちですか？
+        = link_to "ログインする", "#", class: "login__text__link"
 
 -# render "devise/shared/links"
 -# = render "devise/shared/error_messages", resource: resource 
