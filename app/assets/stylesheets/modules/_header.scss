@@ -1,0 +1,76 @@
+
+// ヘッダー
+
+.header {
+  height: 112px;
+  background-color: #fff;
+  border-bottom: 1px solid #e6e6e6;
+  box-shadow: 0 0 1px rgba(34,34,34,.08);
+  &__contents {
+    margin: 0 50px;
+    padding: 12px 0;
+    height: 64px;
+    width: 1377px;
+    .header__Photo-diary {
+      display: flex;
+      width: 180px;
+      margin-left: 10px;
+      .header__icon-camera {
+        font-size: 1.8em;
+        margin-right: 10px;
+        margin-top: 5px;
+      }
+      .header__title {
+        font-size: 25px;
+        font-family: cursive;
+        font-weight: 600;
+        color: black;
+      }
+    }
+  }
+}
+
+// ヘッダーのnav部分
+
+.header__nav {
+  height: 48px;
+  .nav__menu {
+    margin-right: 50px;
+    margin-left: 50px;
+    height: 48px;
+    display: flex;
+    .nav__menu__text {
+      width: 74px;
+      height: 48px;
+      text-align: center;
+      padding: 16px 0;
+      .nav__menu__btn {
+        font-size: 16px;
+        font-weight: bold;
+        color: #AAAAAA;
+        cursor: pointer;
+      }
+    }
+    .nav__menu__right {
+      margin-left: auto;
+      display: flex;
+      .nav__menu__sign {
+        width: 85px;
+        height: 48px;
+        text-align: center;
+        padding: 16px 0;
+        margin-left: 10px;
+        .nav__menu__btn {
+          font-size: 16px;
+          font-weight: bold;
+          color: #AAAAAA;
+          cursor: pointer;
+          // border: 1px solid #FFABCE;
+          // border-radius: 4px;
+        }
+      }
+    }
+  }
+}
+
+
