@@ -1,3 +1,17 @@
+//mixin
+
+@mixin nav__right__text {
+  width: 85px;
+  height: 48px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+@mixin nav__right__btn {
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
 
 // ヘッダー
 
@@ -35,8 +49,7 @@
 .header__nav {
   height: 48px;
   .nav__menu {
-    margin-right: 50px;
-    margin-left: 50px;
+    margin: 0 50px;
     height: 48px;
     display: flex;
     .nav__menu__text {
@@ -55,18 +68,27 @@
       margin-left: auto;
       display: flex;
       .nav__menu__sign {
-        width: 85px;
-        height: 48px;
-        text-align: center;
+        @include nav__right__text();
         padding: 16px 0;
-        margin-left: 10px;
         .nav__menu__btn {
-          font-size: 16px;
-          font-weight: bold;
+          @include nav__right__btn();
           color: #AAAAAA;
-          cursor: pointer;
-          // border: 1px solid #FFABCE;
-          // border-radius: 4px;
+        }
+      }
+      .nav__menu__post {
+        @include nav__right__text();
+        padding: 15px 0 10px;
+        &__enclosure {
+          height: 23px;
+          width: 85px;
+          background-color: #FFABCE;
+          border: 1px solid #FFABCE;
+          border-radius: 4px;
+          .post-btn {
+            @include nav__right__btn();
+            height: 28px;
+            color: #ffffff;
+          }
         }
       }
     }
