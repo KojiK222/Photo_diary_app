@@ -1,2 +1,23 @@
-%h1 Users#show
-%p Find me in app/views/users/show.html.haml
+= render partial: "layouts/header"
+%body
+  .cuurrent-user__profile
+    .mypage__nav
+      = attachment_image_tag @user, :profile_image, fallback: "no-image.png", class: "mypage-user__attachment_image"
+      .profil__contents
+        .user-name__profil-edit
+          .user__name
+            = @user.username
+          - if @user.id == current_user.id
+            .profil-edit
+              = link_to "プロフィール編集", edit_user_path(@user), class: "profil-edit__text"
+        .post-follow__numbers
+          .post-follow__numbers__nav
+            投稿数
+          .post-follow__numbers__nav
+            フォロー中  人
+          .post-follow__numbers__nav
+            フォロワー  人
+        .profil__text
+          = @user.profile
+-# %h1 Users#show
+-# %p Find me in app/views/users/show.html.haml

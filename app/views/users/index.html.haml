@@ -9,7 +9,9 @@
       - @users.each do |user|
         %figure.user__profile__image
           = link_to user_path(user) do
-            .users__image__name
+            .user__image__name
               = attachment_image_tag user, :profile_image, fallback: "no-image.png", class: "attachment_image"
               .users__name
                 = user.username
+              .follow__text
+                -# = link_to "フォロー中", "#", class: "under__follow"

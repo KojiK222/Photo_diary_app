@@ -2,14 +2,72 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-// ユーザー名一覧
+// 現在のユーザープロフィール
 
 .cuurrent-user__profile{
-  height: 200px;
+  height: 240px;
   background-color: #fff;
   border-bottom: 1px solid #e6e6e6;
   border-top: 1px solid #e6e6e6;
 }
+
+.mypage__nav {
+  height: 240px;
+  width: 750px;
+  margin: 0 auto;
+  padding: 10px 0;
+  display: flex;
+  .mypage-user__attachment_image {
+    height: 160px;
+    width: 160px;
+    border-radius: 90px;
+    margin: 30px 0 30px 20px;
+  }
+  .profil__contents {
+    width: 540px;
+    margin-left: 80px;
+    .user-name__profil-edit {
+      display: flex;
+      padding-top: 20px;
+      .user__name {
+        font-size: 16px;
+        font-weight: bold;
+        color: #222;
+        height: 20px;
+        margin-top: 5px;
+      }
+      .profil-edit {
+        margin-left: 20px;
+        width: 135px;
+        height: 30px;
+        border: 1px solid #FFABCE;
+        background-color: #FFABCE;
+        border-radius: 4px;
+        padding: 3px 9px 5px;
+        .profil-edit__text {
+          color: #ffffff;
+          font-size: 14px;
+          text-align: center;
+          font-weight: 600;
+        }
+      }
+    }
+    .post-follow__numbers {
+      height: 18px;
+      display: flex;
+      margin: 20px 0;
+      &__nav {
+        margin-right: 40px;
+        font-size: 16px;
+      }
+    }
+    .profil__text {
+      height: 100px;
+    }
+  }
+  
+}
+
 
 // ユーザー名一覧のbody
 
@@ -29,7 +87,7 @@
   border-bottom: 1px solid #f5f5f5;
 }
 
-.users__image__name {
+.user__image__name {
   display: flex;
   .attachment_image {
     height: 100px;
@@ -41,7 +99,17 @@
     font-weight: bold;
     color: #222;
     height: 20px;
-    padding: 40px 0;
+    padding: 35px 0 40px;
     margin-left: 15px;
+  }
+  .follow__text {
+    margin-left: auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    width: 92px;
+    height: 32px;
+    background-color: #FFABCE;
+    border: 1px solid #FFABCE;
+    border-radius: 4px;
   }
 }
