@@ -1,0 +1,15 @@
+= render partial: "layouts/header"
+%body
+  .cuurrent-user__profile
+  -# %h1 Users#index 
+  -# %p Find me in app/views/users/index.html.haml
+
+  .users__main
+    .users__contents
+      - @users.each do |user|
+        %figure.user__profile__image
+          = link_to user_path(user) do
+            .users__image__name
+              = attachment_image_tag user, :profile_image, fallback: "no-image.png", class: "attachment_image"
+              .users__name
+                = user.username

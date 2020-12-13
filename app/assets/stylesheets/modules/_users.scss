@@ -1,0 +1,47 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// ユーザー名一覧
+
+.cuurrent-user__profile{
+  height: 200px;
+  background-color: #fff;
+  border-bottom: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
+}
+
+// ユーザー名一覧のbody
+
+.users__main {
+  padding: 40px 0;
+  background-color: #f5f5f5;
+  .users__contents {
+    width: 620px;
+    margin: 0 auto;
+    background-color: #fff;
+  }
+}
+
+// ユーザー一人一人
+
+.user__profile__image {
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.users__image__name {
+  display: flex;
+  .attachment_image {
+    height: 100px;
+    width: 100px;
+    border-radius: 90px;
+  }
+  .users__name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+    height: 20px;
+    padding: 40px 0;
+    margin-left: 15px;
+  }
+}

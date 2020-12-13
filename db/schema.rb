@@ -20,6 +20,8 @@ ActiveRecord::Schema.define(version: 2020_12_06_201456) do
     t.datetime "remember_created_at"
     t.string "username", null: false
     t.string "fullname", null: false
+    t.text "profile"
+    t.string "profile_image_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["email"], name: "index_users_on_email", unique: true
