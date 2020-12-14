@@ -1,2 +1,35 @@
-%h1 Users#edit
-%p Find me in app/views/users/edit.html.haml
+= render partial: "layouts/header"
+%body
+  .profile-edit__body
+    .profile-edit__form
+      = form_for @user do |f|
+
+        .edit-form__contents
+
+          .edit-form__name
+            .edit-name__text
+              名前
+            = f.text_field :username, class: "edit__input"
+
+          .edit-form__profile
+            .edit-profile__text
+              プロフィール
+            = f.text_area :profile, class: "edit__textarea"
+
+          .edit-form__profile-image
+            .edit-profile-image__text
+              プロフィール写真
+            .image__form
+              = f.attachment_field :profile_image, class: "image__input"
+
+          .edit-form__email
+            .edit-email__text
+              メールアドレス
+            = f.email_field :email, class: "edit__input"
+
+          .update-form__btn
+            = f.submit "更新", class: "update__btn"
+
+
+-# %h1 Users#edit
+-# %p Find me in app/views/users/edit.html.haml

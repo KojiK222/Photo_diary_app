@@ -4,3 +4,6 @@
       .header__Photo-diary
         = icon('fas', 'camera-retro', class: "header__icon-camera")
         = link_to "Photo diary", "/", class: "header__title"
+      - if user_signed_in?
+        .current-user__icon
+          = attachment_image_tag current_user, :profile_image, fallback: "no-image.png", class: "current-user__image"

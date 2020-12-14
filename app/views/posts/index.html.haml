@@ -3,7 +3,7 @@
   .header__nav
     .nav__menu
       .nav__menu__text
-        = link_to "ホーム", "#", class: "nav__menu__btn"
+        = link_to "クリエイター", users_path, class: "nav__menu__btn"
       
       - if user_signed_in?
         .nav__menu__right
