@@ -11,7 +11,7 @@
             = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "nav__menu__btn"
           .nav__menu__post
             .nav__menu__post__enclosure
-              = link_to "投稿", "#",  class: "post-btn"
+              = link_to "投稿", new_photo_path,  class: "post-btn"
       - else
         .nav__menu__right
           .nav__menu__sign

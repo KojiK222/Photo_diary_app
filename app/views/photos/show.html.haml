@@ -1,2 +1,14 @@
-%h1 Photos#show
-%p Find me in app/views/photos/show.html.haml
+= render partial: "layouts/header"
+%body
+  .photo__detail__body
+    .detail__form__body
+      .photo-show__image
+        = attachment_image_tag @photo, :image 
+      
+      .photo-show__title 
+        = @photo.title
+      
+      .photo-show__body
+        = simple_format @photo.body 
+-# %h1 Photos#show
+-# %p Find me in app/views/photos/show.html.haml
