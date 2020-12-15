@@ -1,0 +1,24 @@
+= render partial: "layouts/header"
+%body
+  .post__create__form
+    = form_for @photo do |f|
+      .post__form__contents
+        .post__form
+          .post__form__text
+            タイトル
+          = f.text_field :title, class: "post__input"
+        
+        .post__form
+          .post__form__text
+            内容
+          = f.text_area :body, class: "post__inpiut-area"
+        
+        .post__form
+          .post__form__text
+            写真
+          = f.attachment_field :image, class: "post__input-image"
+        
+        .post-submit__form
+          = f.submit "投稿", class: "post__submit"
+-# %h1 Photos#new
+-# %p Find me in app/views/photos/new.html.haml

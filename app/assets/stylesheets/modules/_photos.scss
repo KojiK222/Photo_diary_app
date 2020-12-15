@@ -1,0 +1,61 @@
+// Place all the styles related to the photos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// 投稿作成フォーム
+
+.post__create__form {
+  border-top: 1px solid #e6e6e6;
+}
+
+.post__form__contents{
+  width: 600px;
+  height: 500px;
+  margin: 20px auto;
+  padding: 30px 20px;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  .post__form {
+    margin-bottom: 20px;
+    &__text {
+      margin-bottom: 10px;
+    }
+  }
+  .post-submit__form {
+    margin-top: 50px;
+  }
+}
+
+.post__form__text {
+  font-weight: bold;
+}
+
+// form-input内容
+
+.post__input {
+  width: 558px;
+}
+
+.post__inpiut-area {
+  width: 558px;
+  height: 100px;
+}
+
+.post__input-image {
+  width: 558px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.post__submit {
+  width: 100px;
+  margin: 0 229px;
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid #FFABCE;
+  border-radius: 4px;
+  background-color: #FFABCE;
+  cursor: pointer;
+}
+
