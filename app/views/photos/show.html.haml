@@ -1,14 +1,30 @@
 = render partial: "layouts/header"
 %body
-  .photo__detail__body
-    .detail__form__body
-      .photo-show__image
-        = attachment_image_tag @photo, :image 
+  .photo__details__body
+    .photo__details__contents
+      .details__diary
+        .photo-details__title 
+          = @photo.title
+
+        .photo-details__image
+          = attachment_image_tag @photo, :image, class: "details__attachment__image"
+        
+        .diary__texts
+          .icon__contents
+            .peace__icon
+              = icon('far', 'heart', class: "heart")
+            .post-user__icon
+              = link_to user_path(@user) do
+                = attachment_image_tag @user, :profile_image, fallback: "no-image.png", class: "post-user__attachment_image"
+
+          .photo-details__body
+            = simple_format @photo.body
       
-      .photo-show__title 
-        = @photo.title
-      
-      .photo-show__body
-        = simple_format @photo.body 
+      .comment__contents
+        .user-comment__submit
+          = form_with url: "#" do |form|
+            = form.text_area :body
+            = form.submit
+        .users__comments
 -# %h1 Photos#show
 -# %p Find me in app/views/photos/show.html.haml

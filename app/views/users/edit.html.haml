@@ -14,7 +14,7 @@
           .edit-form__profile
             .edit-profile__text
               プロフィール
-            = f.text_area :profile, class: "edit__textarea"
+            = f.text_area :profile, maxlength: 100, class: "edit__textarea"
 
           .edit-form__profile-image
             .edit-profile-image__text

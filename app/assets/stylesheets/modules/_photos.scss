@@ -59,14 +59,92 @@
   cursor: pointer;
 }
 
+
+
 // 投稿したモノの詳細ページ
 
-.photo__detail__body {
-  margin-top: 20px;
-  .detail__form__body {
-    margin-left: auto;
-    margin-right: auto;
-    width: 800px;
+.photo__details__body {
+  border-top: 1px solid #e6e6e6;
+  margin-bottom: 100px;
+}
+
+.photo__details__contents {
+  margin: 50px auto;
+  width: 1100px;
+  display: flex;
+  .details__diary {
+    width: 500px;
+    .details__attachment__image {
+      height: 600px;
+      width: 500px;
+    }
   }
+  .comment__contents {
+    margin-left: 100px;
+    width: 400px;
+    height: 700px;
+  }
+}
+
+// 投稿したタイトル
+
+.photo-details__title {
+  margin-bottom: 8px;
+}
+
+// 投稿した文のbody部分
+
+.diary__texts {
+  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  border-radius: 10px;
+  .icon__contents {
+    margin-top: 4px;
+    padding: 0 16px;
+    height: 40px;
+    border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    .peace__icon {
+      width: 40px;
+      height: 40px;
+      padding: 8px;
+      .heart {
+        font-size: 1.5em;
+      }
+    }
+    .post-user__icon {
+      width: 40px;
+      height: 40px;
+      padding: 3px;
+      margin-left: auto;
+      margin-right: 5px;
+      .post-user__attachment_image {
+        height: 30px;
+        width: 30px;
+        border-radius: 90px;
+      }
+    }
+  }
+  .photo-details__body {
+    padding: 5px 16px 0;
+  }
+}
+
+// コメント関連
+
+.user-comment__submit {
+  height: 200px;
+  width: 400px;
+  border: 1px solid #e6e6e6;
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+.users__comments {
+  height: 500px;
+  width: 400px;
+  border: 1px solid #e6e6e6;
+  border-radius: 15px;
+  overflow-y: scroll;
 }
 
