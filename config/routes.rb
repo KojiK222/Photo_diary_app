@@ -4,5 +4,7 @@ Rails.application.routes.draw do
 
   root to: 'posts#index'
   resources :users
-  resources :photos
+  resources :photos do 
+    resources :comments, only: :create
+  end
 end

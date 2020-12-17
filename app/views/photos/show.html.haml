@@ -21,10 +21,22 @@
             = simple_format @photo.body
       
       .comment__contents
-        .user-comment__submit
-          = form_with url: "#" do |form|
-            = form.text_area :body
-            = form.submit
         .users__comments
+          - if @comments 
+            - @comments.each do |comment|
+              .users__commnet__text
+                .comment-user__icon
+                  = link_to user_path(comment.user) do
+                    = attachment_image_tag comment.user, :profile_image, fallback: "no-image.png", class: "comment-user__image"
+                .commnet-user__text
+                  = comment.text
+        
+        .user-comment__submit
+          - if user_signed_in?
+            = form_with(model: [@photo, @comment], local: true) do |form|
+              = form.text_area :text, placeholder: "コメント", class: "comment__input"
+              = form.submit "コメントする", class: "comment__btn"
 -# %h1 Photos#show
 -# %p Find me in app/views/photos/show.html.haml
+
+-# = link_to comment.user.profile_image, "/users/#{comment.user_id}"

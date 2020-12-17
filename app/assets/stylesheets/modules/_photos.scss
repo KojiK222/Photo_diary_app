@@ -131,20 +131,68 @@
   }
 }
 
-// コメント関連
+// コメントを送信する部分
 
 .user-comment__submit {
   height: 200px;
   width: 400px;
   border: 1px solid #e6e6e6;
   border-radius: 15px;
-  margin-bottom: 50px;
+  padding: 20px;
 }
+
+.comment__input {
+  width: 358px;
+  height: 120px;
+  border-radius: 10px;
+  border: 1px solid #FFABCE;
+  padding: 5px;
+}
+
+.comment__btn {
+  display: inline-block;
+  margin: 10px 109px 0;
+  width: 120px;
+  color: #fff;
+  font-weight: 600;
+  border: 1px solid #FFABCE;
+  border-radius: 4px;
+  background-color: #FFABCE;
+  cursor: pointer;
+}
+
+// ユーザー同士のコメント関連
+
 .users__comments {
   height: 500px;
   width: 400px;
   border: 1px solid #e6e6e6;
   border-radius: 15px;
   overflow-y: scroll;
+  margin-bottom: 50px;
 }
+
+.users__commnet__text {
+  display: flex;
+  .comment-user__icon {
+    margin-left: 15px;
+    margin-top: 15px;
+    height: 50px;
+    width: 50px;
+    .comment-user__image {
+      width: 50px;
+      height: 50px;
+      border-radius: 90px;
+    }    
+  }
+  .commnet-user__text {
+    margin-left: 10px;
+    margin-top: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    background-color: #dddddd;
+    padding: 10px;
+  }
+}
+
 
