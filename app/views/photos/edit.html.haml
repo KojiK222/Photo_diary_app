@@ -1,2 +1,26 @@
-%h1 Photos#edit
-%p Find me in app/views/photos/edit.html.haml
+= render partial: "layouts/header"
+%body
+  .photo__edit__body
+    .photo__edit__form
+      = form_for @photo do |f|
+
+        .photo__edit
+          .photo__edit__text
+            タイトル
+          = f.text_field :title, class: "edit__title"
+        
+        .photo__edit
+          .photo__edit__text
+            内容
+          = f.text_area :body, class: "edit__post"
+        
+        .photo__edit
+          .photo__edit__text
+            写真
+          = f.attachment_field :image, class: "edit__image"
+        
+        .photo__update__submit
+          = f.submit '更新', class: "edit__update__btn"
+
+-# %h1 Photos#edit
+-# %p Find me in app/views/photos/edit.html.haml

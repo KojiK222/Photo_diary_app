@@ -3,6 +3,9 @@
   .photo__details__body
     .photo__details__contents
       .details__diary
+        - if @photo.user.id == current_user.id
+          .details__edit__btn
+            = link_to "編集", edit_photo_path(@photo), class: "details-edit__btn"
         .photo-details__title 
           = @photo.title
 
@@ -14,8 +17,8 @@
             .peace__icon
               = icon('far', 'heart', class: "heart")
             .post-user__icon
-              = link_to user_path(@user) do
-                = attachment_image_tag @user, :profile_image, fallback: "no-image.png", class: "post-user__attachment_image"
+              = link_to user_path(@photo.user) do
+                = attachment_image_tag @photo.user, :profile_image, fallback: "no-image.png", class: "post-user__attachment_image"
 
           .photo-details__body
             = simple_format @photo.body
@@ -39,4 +42,3 @@
 -# %h1 Photos#show
 -# %p Find me in app/views/photos/show.html.haml
 
--# = link_to comment.user.profile_image, "/users/#{comment.user_id}"

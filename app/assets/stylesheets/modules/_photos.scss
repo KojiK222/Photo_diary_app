@@ -86,10 +86,27 @@
   }
 }
 
+// 編集ボタン
+
+.details__edit__btn {
+  width: 40px;
+  height: 28px;
+  padding: 2px;
+  background-color: #FFABCE;
+  border: 1px solid #FFABCE;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.details-edit__btn {
+  color: #fff;
+}
+
 // 投稿したタイトル
 
 .photo-details__title {
   margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 22px;
 }
 
 // 投稿した文のbody部分
@@ -127,7 +144,8 @@
     }
   }
   .photo-details__body {
-    padding: 5px 16px 0;
+    padding: 5px 16px;
+    font-size: 14px;
   }
 }
 
@@ -196,3 +214,153 @@
 }
 
 
+
+// 投稿編集ページ
+
+.photo__edit__body {
+  border-top: 1px solid #e6e6e6;
+  .photo__edit__form {
+    margin: 20px auto;
+    padding: 30px 20px;
+    width: 500px;
+    height: 600px;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+  }
+}
+
+// 投稿編集ホーム
+
+.photo__edit {
+  display: flex;
+  margin-bottom: 50px;
+  &__text {
+    margin-left: auto;
+    margin-right: 40px;
+  }
+  .edit__title {
+    width: 300px;
+    border: 1px solid #FFABCE;
+    border-radius: 4px;
+    padding: 6px;
+  }
+  .edit__post {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid #FFABCE;
+    padding: 6px;
+  }
+  .edit__image {
+    border: 1px solid #FFABCE;
+    border-radius: 4px;
+    width: 300px;
+    padding: 6px;
+  }
+}
+
+// 投稿編集ボタン
+
+.photo__update__submit {
+  margin-left: 179px;
+  margin-right: 179px;
+  margin-top: 80px;
+  .edit__update__btn {
+    width: 100px;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #FFABCE;
+    border-radius: 4px;
+    background-color: #FFABCE;
+    cursor: pointer;
+  }
+}
+
+
+
+// トップページ
+
+.index__body {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 940px;
+  display: flex;
+  .index__diaries {
+    width: 600px;
+  }
+  .index__users {
+    margin-left: 50px;
+    width: 290px;
+    .index__current__user {
+      height: 80px;
+      margin: 10px 0;
+      border: 1px solid #e6e6e6;
+      border-radius: 10px;
+    }
+    .index__reration__users {
+      height: 60px;
+      border: 1px solid #e6e6e6;
+      border-radius: 10px;
+    }
+  }
+}
+
+.index__diaries__contents {
+  margin-bottom: 60px;
+}
+.diary__user {
+  height: 60px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  display: flex;
+  padding: 16px;
+  .diary__user__icon {
+    height: 32px;
+    width: 32px;
+    .diary__user__image {
+      height: 32px;
+      width: 32px;
+      border-radius: 90px;
+    }
+  }
+  .diary__user__name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #222222;
+    height: 20px;
+    margin-left: 14px;
+    margin-top: 5px;
+  }
+}
+.post__diary {
+  width: 600px;
+  height: 700px;
+}
+.diary__icon__contents {
+  height: 40px;
+  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  border-radius: 4px;
+  padding: 4px;
+  display: flex;
+  .diary__heart__icon {
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    margin-left: 10px;
+    .diary__heart {
+      font-size: 1.5em;
+    }
+  }
+  .diary__comments__icon {
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    margin-left: 10px;
+    .diary__comments {
+      font-size: 1.5em;
+    }
+  }
+}

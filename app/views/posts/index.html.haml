@@ -1,22 +1,22 @@
-= render partial: "layouts/header"
-%body
-  .header__nav
-    .nav__menu
-      .nav__menu__text
-        = link_to "クリエイター", users_path, class: "nav__menu__btn"
+-# = render partial: "layouts/header"
+-# %body
+-#   .header__nav
+-#     .nav__menu
+-#       .nav__menu__text
+-#         = link_to "クリエイター", users_path, class: "nav__menu__btn"
       
-      - if user_signed_in?
-        .nav__menu__right
-          .nav__menu__sign
-            = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "nav__menu__btn"
-          .nav__menu__post
-            .nav__menu__post__enclosure
-              = link_to "投稿", new_photo_path,  class: "post-btn"
-      - else
-        .nav__menu__right
-          .nav__menu__sign
-            = link_to "ログイン", new_user_session_path, class: "nav__menu__btn"
-          .nav__menu__sign
-            = link_to "新規登録", new_user_registration_path, class: "nav__menu__btn"
-  .hello 
-    hello!haml
+-#       - if user_signed_in?
+-#         .nav__menu__right
+-#           .nav__menu__sign
+-#             = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "nav__menu__btn"
+-#           .nav__menu__post
+-#             .nav__menu__post__enclosure
+-#               = link_to "投稿", new_photo_path,  class: "post-btn"
+-#       - else
+-#         .nav__menu__right
+-#           .nav__menu__sign
+-#             = link_to "ログイン", new_user_session_path, class: "nav__menu__btn"
+-#           .nav__menu__sign
+-#             = link_to "新規登録", new_user_registration_path, class: "nav__menu__btn"
+-#   .hello 
+-#     hello!haml

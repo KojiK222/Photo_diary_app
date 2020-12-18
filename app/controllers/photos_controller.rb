@@ -1,5 +1,7 @@
 class PhotosController < ApplicationController
   def index
+    @photos = Photo.all
+    @photos = Photo.includes(:user).order("created_at DESC")
   end
 
   def show
@@ -21,6 +23,13 @@ class PhotosController < ApplicationController
   end
 
   def edit
+    @photo = Photo.find(params[:id])
+  end
+
+  def update
+    @photo = Photo.find(params[:id])
+    @photo.update(photo_params)
+    redirect_to photo_path(@photo)
   end
 
   private
