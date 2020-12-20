@@ -29,17 +29,23 @@
             .diary__user__name
               = link_to user_path(photo.user) do
                 = photo.user.username
-          = link_to photo_path(photo) do
+          = link_to photo_path(photo.id) do
             = attachment_image_tag photo, :image, class: "post__diary"
           .diary__icon__contents
             .diary__heart__icon
               = icon('far', 'heart', class: "diary__heart")
             .diary__comments__icon
-              = link_to photo_path(photo) do
+              = link_to photo_path(photo.id) do
                 = icon('far', 'comments', class: "diary__comments")
 
     .index__users
       .index__current__user
+        .index__current__icon
+          = link_to user_path(current_user) do
+            = attachment_image_tag current_user, :profile_image, fallback: "no-image.png", class: "index-current__image"
+        .index__current__username
+          = link_to user_path(current_user) do
+            = current_user.username
       .index__reration__users
 -# %h1 Photos#index
 -# %p Find me in app/views/photos/index.html.haml

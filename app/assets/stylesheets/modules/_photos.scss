@@ -295,8 +295,9 @@
     .index__current__user {
       height: 80px;
       margin: 10px 0;
-      border: 1px solid #e6e6e6;
+      // border: 1px solid #e6e6e6;
       border-radius: 10px;
+      display: flex;
     }
     .index__reration__users {
       height: 60px;
@@ -363,4 +364,25 @@
       font-size: 1.5em;
     }
   }
+}
+
+.index__current__icon {
+  width: 60px;
+  height: 60px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  .index-current__image {
+    width: 60px;
+    height: 60px;
+    border-radius: 90px;
+  }
+}
+.index__current__username {
+  font-size: 16px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: 10px;
+  font-weight: bold;
+  color: #222222;
 }
