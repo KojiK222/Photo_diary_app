@@ -1,4 +1,8 @@
 class ApplicationController < ActionController::Base
+  class MyLogger < Logger
+    include ActiveSupport::LoggerSilence
+  end
+
   before_action :configure_permitted_parameters, if: :devise_controller?
 
   private
