@@ -18,9 +18,10 @@ GitHub,GitHubDesktop
 ## エディタ
 VScode
 # 課題や今後実装したい機能
-・フォロー機能
-・いいね機能
-・ハッシュタグ機能
+- フォロー機能
+- いいね機能
+- ハッシュタグ機能
+- 個人同士でのチャット機能
 # DB設計
 ## usersテーブル
 |Column|Type|Options|
