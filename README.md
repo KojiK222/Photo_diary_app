@@ -1,24 +1,4 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# アプリ名
+### Photo diary
+# 概要
+このアプリでは、登録者の投稿した写真や日記のような記録を見ることができます。また、投稿した写真や日記に対して、コメントをし合ってチャットのような会話をすることができます。
