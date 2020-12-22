@@ -22,3 +22,37 @@ VScode
 ・いいね機能
 ・ハッシュタグ機能
 # DB設計
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|email|string|null: false|
+|encrypted_password|string|null: false|
+|username|string|null: false|
+|fullname|string|null: false|
+|profile|text|
+|profile_image_id|string|
+## Association
+- has_many :photos, dependent: :destroy
+- has_many :comments
+
+## photosテーブル
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|null: false, foreign_key: true|
+|title|string|
+|body|text|
+|image_id|string|
+## Association
+- belongs_to :user
+- attachment :image
+- has_many :comments 
+
+## commentsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|null: false, foreign_key: true|
+|photo_id|integer|
+|text|text|
+## Association
+- belongs_to :user
+- belongs_to :photo
