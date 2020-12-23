@@ -128,7 +128,12 @@
       padding: 8px;
       .heart {
         font-size: 1.5em;
+        margin-bottom: 5px;
+        color: #FFABCE;
       }
+    }
+    .show__count-num {
+      margin: 8px 0;
     }
     .post-user__icon {
       width: 40px;
@@ -209,7 +214,7 @@
     border: 1px solid #dddddd;
     border-radius: 10px;
     background-color: #dddddd;
-    padding: 10px;
+    padding: 10px 10px 0 10px;
   }
 }
 
@@ -295,7 +300,6 @@
     .index__current__user {
       height: 80px;
       margin: 10px 0;
-      // border: 1px solid #e6e6e6;
       border-radius: 10px;
       display: flex;
     }
@@ -353,7 +357,11 @@
     margin-left: 10px;
     .diary__heart {
       font-size: 1.5em;
+      color: #FFABCE;
     }
+  }
+  .index__count-num {
+    margin: 3px 0;
   }
   .diary__comments__icon {
     width: 30px;
