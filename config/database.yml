@@ -49,8 +49,8 @@ test:
 #
 production:
   <<: *default
-  adapter: postgresql
-  encoding: unicode
+  adapter: mysql2
+  encoding: utf8mb4
   pool: 5
   # database: Photo_diary_app_production
   # username: Photo_diary_app
