@@ -52,6 +52,6 @@ production:
   adapter: mysql2
   encoding: utf8mb4
   pool: 5
-  # database: Photo_diary_app_production
-  # username: Photo_diary_app
-  # password: <%= ENV['PHOTO_DIARY_APP_DATABASE_PASSWORD'] %>
+  database: Photo_diary_app_production
+  username: Photo_diary_app
+  password: <%= ENV['PHOTO_DIARY_APP_DATABASE_PASSWORD'] %>
