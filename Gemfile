@@ -6,7 +6,7 @@ ruby '2.6.5'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0'
 # Use mysql as the database for Active Record
-# gem 'mysql2', '>= 0.4.4'
+gem 'mysql2', '>= 0.4.4'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -59,11 +59,10 @@ gem "font-awesome-sass"
 gem 'devise'
 gem "refile", require: "refile/rails", github: 'manfe/refile'
 gem "refile-mini_magick"
-# gem 'mysql2', '>= 0.4.4'
 gem 'rails_12factor', group: :production
 
 group :production do
-  gem 'pg'
+  # gem 'pg'
 end
 
 gem 'bootstrap', '~> 4.4.1'
