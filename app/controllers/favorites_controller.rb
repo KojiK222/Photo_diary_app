@@ -1,13 +1,13 @@
 class FavoritesController < ApplicationController
   def create
-    @favorite = current_user.favorites.create(photo_id: params[:photo_id])
-    redirect_back(fallback_location: root_path)
+    favorite = current_user.favorites.build(photo_id: params[:photo_id])
+    favorite.save
+    redirect_to photos_path
   end
 
   def destroy
-    @photo = Photo.find(params[:photo_id])
-    @favorite = current_user.favorites.find_by(photo_id: @photo.id)
-    @favorite.destroy
-    redirect_back(fallback_location: root_path)
+    favorite = Favorite.find_by(photo_id: params[:photo_id], user_id: current_user.id)
+    favorite.destroy
+    redirect_to photos_path
   end
 end
