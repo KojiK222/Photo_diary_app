@@ -29,6 +29,14 @@
             .diary__user__name
               = link_to user_path(photo.user) do
                 = photo.user.username
+            - if user_signed_in?
+              - if current_user != photo.user
+                - if photo.user.followed_by?(current_user)
+                  .followed__btn__toppage
+                    = link_to "フォロー中", user_relationships_path(photo.user.id), class: "followed__text", method: :delete
+                - else
+                  .follow__btn__toppage
+                    = link_to "フォローする", user_relationships_path(photo.user.id), class: "follow__text", method: :post
           = link_to photo_path(photo.id) do
             = attachment_image_tag photo, :image, class: "post__diary"
           .diary__icon__contents

@@ -1,0 +1,70 @@
+// Place all the styles related to the relationships controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// mixin
+
+@mixin follow__btn {
+  width: 100px;
+  height: 22px;
+  margin-top: 5px;
+  border: 1px solid #FFABCE;
+  border-radius: 4px;
+}
+
+@mixin follow__text__btn {
+  display: block;
+  color: #FFABCE;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+@mixin followed__text__btn {
+  display: block;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+// トップページのそれぞれの投稿のフォロー、フォロワー数
+
+.follow__btn__toppage {
+  @include follow__btn();
+  margin-left: auto;
+  .follow__text {
+    @include follow__text__btn();
+  }
+}
+
+.followed__btn__toppage {
+  @include follow__btn();
+  margin-left: auto;
+  background-color: #FFABCE;
+  .followed__text {
+    @include followed__text__btn();
+  }
+}
+
+
+// ユーザーマイページのフォロー、フォロワー関連
+
+.follow__btn__mypage {
+  @include follow__btn();
+  margin-left: 10px;
+  .follow__text {
+    @include follow__text__btn()
+  }
+}
+
+.followed__btn__mypage {
+  @include follow__btn();
+  margin-left: 15px;
+  background-color: #FFABCE;
+  .followed__text {
+    @include followed__text__btn();
+  }
+}

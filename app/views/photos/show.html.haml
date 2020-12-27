@@ -3,9 +3,10 @@
   .photo__details__body
     .photo__details__contents
       .details__diary
-        - if @photo.user.id == current_user.id
-          .details__edit__btn
-            = link_to "編集", edit_photo_path(@photo), class: "details-edit__btn"
+        - if user_signed_in?
+          - if @photo.user.id == current_user.id
+            .details__edit__btn
+              = link_to "編集", edit_photo_path(@photo), class: "details-edit__btn"
         .photo-details__title 
           = @photo.title
 
@@ -23,7 +24,6 @@
                 = link_to photo_favorites_path(@photo), method: :post do
                   .peace__icon
                     = icon('far', 'heart', class: "heart")
-            - else
               .show__count-num
                 = @photo.favorites.count
             .post-user__icon
@@ -44,8 +44,8 @@
                 .commnet-user__text
                   = simple_format comment.text
         
-        .user-comment__submit
-          - if user_signed_in?
+        - if user_signed_in?
+          .user-comment__submit
             = form_with(model: [@photo, @comment], local: true) do |form|
               = form.text_area :text, placeholder: "コメント", class: "comment__input"
               = form.submit "コメントする", class: "comment__btn"
