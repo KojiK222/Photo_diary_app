@@ -1,6 +1,7 @@
 class PhotosController < ApplicationController
   def index
     @photos = Photo.includes(:user).order("created_at DESC")
+    @users = User.all
   end
 
   def show

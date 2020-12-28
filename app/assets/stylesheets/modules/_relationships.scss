@@ -68,3 +68,26 @@
     @include followed__text__btn();
   }
 }
+
+.index__reration__users {
+  height: 60px;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  margin-bottom: 10px;
+  .followed__user__icon {
+    width: 40px;
+    height: 40px;
+    .followed__user__image {
+      width: 40px;
+      height: 40px;
+      border-radius: 90px;
+    }
+  }
+  .followed__user__name {
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+}
