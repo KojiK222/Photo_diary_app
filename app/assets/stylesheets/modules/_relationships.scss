@@ -8,13 +8,13 @@
   width: 100px;
   height: 22px;
   margin-top: 5px;
-  border: 1px solid #FFABCE;
+  border: 1px solid #FF6666;
   border-radius: 4px;
 }
 
 @mixin follow__text__btn {
   display: block;
-  color: #FFABCE;
+  color: #FF6666;
   font-weight: bold;
   font-size: 14px;
   text-align: center;
@@ -43,7 +43,7 @@
 .followed__btn__toppage {
   @include follow__btn();
   margin-left: auto;
-  background-color: #FFABCE;
+  background-color: #FF6666;
   .followed__text {
     @include followed__text__btn();
   }
@@ -63,7 +63,7 @@
 .followed__btn__mypage {
   @include follow__btn();
   margin-left: 15px;
-  background-color: #FFABCE;
+  background-color: #FF6666;
   .followed__text {
     @include followed__text__btn();
   }
