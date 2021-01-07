@@ -30,20 +30,24 @@
   font-weight: bold;
 }
 
-// form-input内容
+// 投稿フォーム
 
 .post__input {
   width: 558px;
+  border: 1px solid #FF6666;
+  border-radius: 4px;
 }
 
 .post__inpiut-area {
   width: 558px;
   height: 100px;
+  border: 1px solid #FF6666;
+  border-radius: 4px;
 }
 
 .post__input-image {
   width: 558px;
-  border: 1px solid #e6e6e6;
+  border: 1px solid #FF6666;
   border-radius: 4px;
   padding: 4px;
 }
