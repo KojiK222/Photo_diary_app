@@ -9,7 +9,7 @@
           .edit-form__name
             .edit-name__text
               名前
-            = f.text_field :username, class: "edit__input"
+            = f.text_field :username, class: "edit__name_email"
 
           .edit-form__profile
             .edit-profile__text
@@ -25,7 +25,7 @@
           .edit-form__email
             .edit-email__text
               メールアドレス
-            = f.email_field :email, class: "edit__input"
+            = f.email_field :email, class: "edit__name_email"
 
           .update-form__btn
             = f.submit "更新", class: "update__btn"

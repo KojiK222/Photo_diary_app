@@ -142,7 +142,6 @@
     width: 600px;
     margin: 0 auto;
     padding: 30px 20px;
-    // background-color: #f5f5f5;
     border: 1px solid #e6e6e6;
     border-radius: 4px;
   }
@@ -152,15 +151,21 @@
 
 // フォームのインプット
 
-.edit__input {
+.edit__name_email {
   margin-left: auto;
   width: 382px;
+  border: 1px solid #FF6666;
+  border-radius: 4px;
+  padding-left: 5px;
 }
 
 .edit__textarea {
   margin-left: auto;
   width: 382px;
   height: 100px;
+  padding: 5px;
+  border: 1px solid #FF6666;
+  border-radius: 4px;
 }
 
 .image__input {
@@ -195,7 +200,7 @@
   display: flex;
   margin-bottom: 40px;
   .image__form {
-    border: 1px solid #e6e6e6;
+    border: 1px solid #FF6666;
     border-radius: 4px;
     margin-left: auto;
     padding: 5px;
