@@ -45,11 +45,6 @@
 
 // ログインホーム
 
-// .SignUp__body {
-//   background-image: url(images/S__38813731.jpg);
-//   background-repeat: repeat-x;
-// }
-
 .SignIn__contents {
   height: 452px;
   width: 940px;
@@ -144,10 +139,10 @@
 //ログインボタン
 
 .login__btn {
-  background-color: #FFABCE;
+  background-color: #FF6666;
   height: 33px;
   width: 150px;
-  border: 1px solid #FFABCE;
+  border: 1px solid #FF6666;
   border-radius: 4px;
   color: #ffffff;
   font-size: 12px;
@@ -159,7 +154,7 @@
 //新規会員登録ページ
 
 .SignUp__body {
-  margin-bottom: 50px;
+  margin-top: 50px;
 }
 .SignUp__contents {
   height: 568px;
@@ -214,9 +209,9 @@
 
 .registration__btn {
   width: 310px;
-  background-color: #FFABCE;
+  background-color: #FF6666;
   height: 33px;
-  border: 1px solid #FFABCE;
+  border: 1px solid #FF6666;
   border-radius: 4px;
   color: #ffffff;
   font-size: 12px;
@@ -243,7 +238,7 @@
     }
     .login__text__link {
       font-size: 14px;
-      color: #FFBEDA;
+      color: #FF6666;
     }
   }
 }
