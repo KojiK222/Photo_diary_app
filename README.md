@@ -18,6 +18,9 @@
 ## ログイン画面
 ![ログイン画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/52938464918c34b089944a4ec713a7bd.png)
 すでに登録してあるユーザーが、メールアドレスとパスワードでログインすることができます。
+## 投稿作成画面
+![投稿作成画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/7dfabb6c7d920bd4a90261ddd5df724a.png)
+ユーザーの投稿するタイトル、写真、内容を作成することができます。
 ## 投稿詳細表示画面
 ![投稿詳細表示画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/890166c0d9852457bd05e459a94e0aba.gif)
 タイトル、写真、文章といった、投稿した写真から感じたことなどを日記のような形で見ることができます。また、その投稿したモノに対して、ユーザー同士でお互い思ったことをコメントし合うことができます。投稿したモノの編集は投稿した本人しかできない設定になっています。このアプリに登録していない人でも、コメントはすることはできませんが、投稿したモノとユーザー同士でのコメントは見ることができます。
@@ -27,6 +30,9 @@
 ## ユーザーマイページ画面
 ![ユーザーマイページ画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/afac353c716b0dcb878de3d2086c0755.jpg)
 アプリ内でのユーザー自身の情報や今まで投稿してきた写真を見ることができます。プロフィールはそのユーザー本人しか編集できない設定になっています。写真をクリックすれば、その写真の詳細画面に移動できます。
+## プロフィール編集画面
+![プロフィール編集画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/a1148d3612f75a566fb5a5455a3b022e.png)
+すでに登録しているユーザーの名前、プロフィール、プロフィール写真、メールアドレスを変更することができます。
 # 使用技術（開発環境）
 ## バックエンド
 Ruby,Ruby on rails
