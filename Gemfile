@@ -61,9 +61,5 @@ gem "refile", require: "refile/rails", github: 'manfe/refile'
 gem "refile-mini_magick"
 gem 'rails_12factor', group: :production
 
-group :production do
-  # gem 'pg'
-end
-
 gem 'bootstrap', '~> 4.4.1'
 gem 'jquery-rails'
