@@ -88,12 +88,12 @@
 // フォロー中一覧ページ
 
 .follows__main {
-  margin-top: 40px;
-  .follows__contents {
+  padding-top: 40px;
+  .follows__users__contents {
     margin: 0 auto;
+    width: 620px;
     .follows__list {
-      width: 620px;
-      height: 88px;
+      height: 100px;
       padding: 10px;
       background-color: #FFFAF0;
       border: 1px solid #e6e6e6;
@@ -112,6 +112,9 @@
         }
         .follows__name {
           margin-left: 10px;
+          font-size: 18px;
+          font-weight: bold;
+          margin-top: 26px;
         }
         .follows__text {
           margin-left: auto;
@@ -120,12 +123,22 @@
           background-color: #FF6666;
           border: 1px solid #FF6666;
           border-radius: 4px;
-          color: #fff;
+          margin-top: 20px;
+          padding: 5px;
+          text-align: center;
+          font-weight: bold;
+          font-size: 14px;
         }
       }
     }
   }
 }
+
+.follows__text__font {
+  color: #fff;
+}
+
+
 
 // プロフィール編集画面
 
