@@ -85,49 +85,45 @@
 }
 
 
-// ユーザー名一覧のbody
+// フォロー中一覧ページ
 
-.users__main {
-  padding: 40px 0;
-  // background-color: #f5f5f5;
-  .users__contents {
-    width: 620px;
+.follows__main {
+  margin-top: 40px;
+  .follows__contents {
     margin: 0 auto;
-    background-color: #fff;
-  }
-}
-
-// ユーザー一人一人
-
-.user__profile__image {
-  border-bottom: 1px solid #f5f5f5;
-}
-
-.user__image__name {
-  display: flex;
-  background-color: #FFFAF0	;
-  border: 1px solid #e6e6e6;
-  border-radius: 4px;
-  .attachment_image {
-    height: 100px;
-    width: 100px;
-    border-radius: 90px;
-  }
-  .users__name {
-    font-size: 16px;
-    font-weight: bold;
-    color: #222;
-    height: 20px;
-    padding: 35px 0 40px;
-    margin-left: 15px;
-  }
-  .follow__text {
-    margin: 32px 20px 32px auto;
-    width: 92px;
-    height: 32px;
-    background-color: #FF6666;
-    border: 1px solid #FF6666;
-    border-radius: 4px;
+    .follows__list {
+      width: 620px;
+      height: 88px;
+      padding: 10px;
+      background-color: #FFFAF0;
+      border: 1px solid #e6e6e6;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      .follows__content {
+        display: flex;
+        .follows__icon {
+          height: 80px;
+          width: 80px;
+          .follows__icon__image {
+            border-radius: 90px;
+            height: 80px;
+            width: 80px;
+          }
+        }
+        .follows__name {
+          margin-left: 10px;
+        }
+        .follows__text {
+          margin-left: auto;
+          width: 92px;
+          height: 32px;
+          background-color: #FF6666;
+          border: 1px solid #FF6666;
+          border-radius: 4px;
+          color: #fff;
+        }
+      }
+    }
   }
 }
 
