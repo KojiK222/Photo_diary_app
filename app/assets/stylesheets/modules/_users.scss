@@ -85,7 +85,20 @@
 }
 
 
-// フォロー中一覧ページ
+// フォロー中一覧とフォロワー一覧ページ
+
+@mixin follows_followers_text {
+  margin-left: auto;
+  width: 92px;
+  height: 32px;
+  border: 1px solid #FF6666;
+  border-radius: 4px;
+  margin-top: 20px;
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+}
 
 .follows__main {
   padding-top: 40px;
@@ -117,17 +130,12 @@
           margin-top: 26px;
         }
         .follows__text {
-          margin-left: auto;
-          width: 92px;
-          height: 32px;
           background-color: #FF6666;
-          border: 1px solid #FF6666;
-          border-radius: 4px;
-          margin-top: 20px;
-          padding: 5px;
-          text-align: center;
-          font-weight: bold;
-          font-size: 14px;
+          @include follows_followers_text();
+        }
+        .followers__text {
+          background-color: #fff;
+          @include follows_followers_text();
         }
       }
     }
@@ -136,6 +144,9 @@
 
 .follows__text__font {
   color: #fff;
+}
+.followers__text__font {
+  color: #FF6666;
 }
 
 
