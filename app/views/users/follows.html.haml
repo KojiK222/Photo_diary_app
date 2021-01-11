@@ -2,35 +2,45 @@
 %body
   .cuurrent-user__profile
     .mypage__nav
-      = attachment_image_tag current_user, :profile_image, fallback: "no-image.png", class: "mypage-user__attachment_image"
+      = attachment_image_tag @user, :profile_image, fallback: "no-image.png", class: "mypage-user__attachment_image"
       .profil__contents
         .user-name__profil-edit
           .user__name
-            = current_user.username
-          - if current_user.id
-            .profil-edit
-              = link_to "プロフィール編集", edit_user_path(current_user.id), class: "profil-edit__text"
+            = @user.username
+          - if user_signed_in?
+            - if @user.id == current_user.id
+              .profil-edit
+                = link_to "プロフィール編集", edit_user_path(current_user.id), class: "profil-edit__text"
+          - if user_signed_in?
+            - if current_user != @user
+              - if @user.followed_by?(current_user)
+                .followed__btn__mypage
+                  = link_to "フォロー中", user_relationships_path(@user.id), class: "followed__text", method: :delete
+              - else
+                .follow__btn__mypage
+                  = link_to "フォローする", user_relationships_path(@user.id), class: "follow__text", method: :post
         .post-follow__numbers
           .post-follow__numbers__nav
             投稿数
           .post-follow__numbers__nav
-            フォロー中  人
+            = link_to "フォロー", follows_user_path(@user.id)
           .post-follow__numbers__nav
-            フォロワー  人
+            = link_to "フォロワー", followers_user_path(@user.id)
         .profil__text
-          = simple_format current_user.profile
+          = simple_format @user.profile
 
   .follows__main
     .follows__users__contents
       - @users.each do |user|
-        - if user.followed_by?(current_user)
-          .follows__list
-            .follows__content
-              .follows__icon
-                = link_to user_path(user) do
-                  = attachment_image_tag user, :profile_image, fallback: "no-image.png", class: "follows__icon__image"
-              .follows__name
-                = link_to user_path(user) do
-                  = user.username
-              .follows__text
-                = link_to "フォロー中", user_relationships_path(user.id), method: :delete, class: "follows__text__font"
+        .follows__list
+          .follows__content
+            .follows__icon
+              = link_to user_path(user) do
+                = attachment_image_tag user, :profile_image, fallback: "no-image.png", class: "follows__icon__image"
+            .follows__name
+              = link_to user_path(user) do
+                = user.username
+            - if current_user != user
+              - if user.followed_by?(current_user)
+                .follows__text
+                  = link_to "フォロー中", user_relationships_path(user.id), method: :delete, class: "follows__text__font"
