@@ -2,9 +2,10 @@
 %body
   .header__nav
     .nav__menu
-      .nav__menu__text
-        = link_to "フォロー中", follows_user_path(current_user.id), class: "nav__menu__btn"
-      
+      - if user_signed_in?
+        .nav__menu__text
+          = link_to "フォロー中", follows_user_path(current_user.id), class: "nav__menu__btn"
+        
       - if user_signed_in?
         .nav__menu__right
           .nav__menu__sign
