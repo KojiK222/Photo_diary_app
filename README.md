@@ -33,6 +33,10 @@
 ## プロフィール編集画面
 ![プロフィール編集画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/a1148d3612f75a566fb5a5455a3b022e.png)
 すでに登録しているユーザーの名前、プロフィール、プロフィール写真、メールアドレスを変更することができます。
+## フォローとフォロワーの一覧ページ
+![フォロー一覧](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/photo_images/5fb59bd176e260f436683b709a73374b.png)
+![フォロワー一覧](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/photo_images/f8e5af57e1ab76fddcddee1f19a74d3f.png)
+フォローしているユーザーとフォローされているユーザーの一覧ページです。ユーザーマイページの「フォロー」「フォロワー」という文字をクリックすればそれぞれの一覧ページに移動します。
 # 使用技術（開発環境）
 ## バックエンド
 Ruby,Ruby on rails
@@ -49,7 +53,7 @@ VScode
 # 課題や今後実装したい機能
 - twitterやfacebookでログインや新規登録をできるようにする
 - フォロー機能といいね機能を非同期通信できるようにする
-- フォローとフォロワーの一覧、投稿数の表示
+- フォローとフォロワー数、投稿数の表示
 - ハッシュタグ機能
 - 個人同士でのチャット機能
 - 新規会員登録、ログインでのvalidatesなどの制限をかける
