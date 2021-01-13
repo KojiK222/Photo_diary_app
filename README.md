@@ -22,13 +22,13 @@
 ![投稿作成画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/7dfabb6c7d920bd4a90261ddd5df724a.png)
 ユーザーの投稿するタイトル、写真、内容を作成することができます。
 ## 投稿詳細表示画面
-![投稿詳細表示画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/890166c0d9852457bd05e459a94e0aba.gif)
+![投稿詳細表示画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/%E8%A9%B3%E7%B4%B0%E3%83%9A%E3%83%BC%E3%82%B8.mp4)
 タイトル、写真、文章といった、投稿した写真から感じたことなどを日記のような形で見ることができます。また、その投稿したモノに対して、ユーザー同士でお互い思ったことをコメントし合うことができます。投稿したモノの編集は投稿した本人しかできない設定になっています。このアプリに登録していない人でも、コメントはすることはできませんが、投稿したモノとユーザー同士でのコメントは見ることができます。
 ## 投稿詳細編集画面
-![投稿詳細編集画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/64c8bd246ef4b98054969c3607fa810c.png)
+![投稿詳細編集画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/%E7%B7%A8%E9%9B%86%E7%94%BB%E9%9D%A2.png)
 タイトル、写真、文章の内容を編集することができます。
 ## ユーザーマイページ画面
-![ユーザーマイページ画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/afac353c716b0dcb878de3d2086c0755.jpg)
+![ユーザーマイページ画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%83%9E%E3%82%A4%E3%83%9A%E3%83%BC%E3%82%B8.jpg)
 アプリ内でのユーザー自身の情報や今まで投稿してきた写真を見ることができます。プロフィールはそのユーザー本人しか編集できない設定になっています。写真をクリックすれば、その写真の詳細画面に移動できます。
 ## プロフィール編集画面
 ![プロフィール編集画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/a1148d3612f75a566fb5a5455a3b022e.png)
