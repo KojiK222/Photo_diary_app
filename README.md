@@ -10,13 +10,13 @@
 ユーザーの投稿した写真とその写真から感じとったモノを日記のように書けるアプリを作りました。ユーザーがその時に目に映ったモノに対して感じ取ったことや自分の好みのモノを発信することで、同じように感じたユーザーがコメントを通してお互い会話をすることができます。その会話により、自分と同じ、もしくは似た価値観の人が繋がることができると考えました。現在は、自分の身の周りに同じ考え方や価値観を持った人を見つけることが難しくても、インターネットによってより広い範囲で見つけることが可能になったと思います。自分の「価値観」や「好き」の共有から始まる横の繋がりが大事だと思いました。そんな繋がりを持ったユーザー同士でのコミュニティ作りができるアプリを作りました。
 # DEMO
 ## トップページ（投稿一覧）
-![トップページ](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/4e2545a70752294378be67e914708fc3.gif)
+![トップページ](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8.mp4)
 ユーザーが投稿した写真を見ることができます。ユーザーのアイコンや名前から、ユーザーマイページに移動することができます。また、フォロー機能もついていて、フォローしたりフォローしているユーザーのアカウントが表示されるようになっています。写真を直接クリックすると詳細ページに移動できるようになっています。
 ## 新規登録画面
-![新規登録画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/fb6e6311c3a83ca6df25d5c069d37c7c.png)
+![新規登録画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/%E6%96%B0%E8%A6%8F%E7%99%BB%E9%8C%B2%E7%94%BB%E9%9D%A2.png)
 名前、メールアドレス、ユーザーネーム、パスワードを登録することができます。
 ## ログイン画面
-![ログイン画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/52938464918c34b089944a4ec713a7bd.png)
+![ログイン画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E7%94%BB%E9%9D%A2.png)
 すでに登録してあるユーザーが、メールアドレスとパスワードでログインすることができます。
 ## 投稿作成画面
 ![投稿作成画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/7dfabb6c7d920bd4a90261ddd5df724a.png)
