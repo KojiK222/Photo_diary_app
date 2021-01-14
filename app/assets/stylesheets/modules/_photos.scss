@@ -92,24 +92,23 @@
 
 // 編集ボタン
 
+@mixin edit_delete_btn {
+  width: 35px;
+    height: 28px;
+    padding: 1px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
 .details__btns {
   display: flex;
   .details__edit__btn {
-    width: 35px;
-    height: 28px;
-    padding: 1px;
-    border: 1px solid #e6e6e6;
-    border-radius: 4px;
-    margin-bottom: 8px;
+    @include edit_delete_btn();
     margin-right: 10px;
   }
   .details__delete__btn {
-    width: 35px;
-    height: 28px;
-    padding: 1px;
-    border: 1px solid #e6e6e6;
-    border-radius: 4px;
-    margin-bottom: 8px;
+    @include edit_delete_btn();
   }
 }
 
