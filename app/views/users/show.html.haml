@@ -20,8 +20,10 @@
                 .follow__btn__mypage
                   = link_to "フォローする", user_relationships_path(@user.id), class: "follow__text", method: :post
         .post-follow__numbers
-          .post-follow__numbers__nav
-            投稿数
+          .post__numbers__text
+            投稿数 :
+          .post__numbers
+            = @user.photos.count
           .post-follow__numbers__nav
             = link_to "フォロー", follows_user_path(@user.id)
           .post-follow__numbers__nav
