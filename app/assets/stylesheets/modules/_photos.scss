@@ -92,17 +92,37 @@
 
 // 編集ボタン
 
-.details__edit__btn {
-  width: 40px;
-  height: 28px;
-  padding: 2px;
-  background-color: #FF6666;
-  border: 1px solid #FF6666;
-  border-radius: 4px;
-  margin-bottom: 8px;
+.details__btns {
+  display: flex;
+  .details__edit__btn {
+    width: 35px;
+    height: 28px;
+    padding: 1px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    margin-right: 10px;
+  }
+  .details__delete__btn {
+    width: 35px;
+    height: 28px;
+    padding: 1px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
 }
-.details-edit__btn {
-  color: #fff;
+
+.details-edit__text {
+  color: #555555;
+  font-size: 14px;
+  margin-left: 2px;
+}
+
+.details-delete__text {
+  color: red;
+  font-size: 14px;
+  margin-left: 2px;
 }
 
 // 投稿したタイトル

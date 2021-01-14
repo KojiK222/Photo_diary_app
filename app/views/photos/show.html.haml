@@ -5,8 +5,11 @@
       .details__diary
         - if user_signed_in?
           - if @photo.user.id == current_user.id
-            .details__edit__btn
-              = link_to "編集", edit_photo_path(@photo), class: "details-edit__btn"
+            .details__btns
+              .details__edit__btn
+                = link_to "編集", edit_photo_path(@photo), class: "details-edit__text"
+              .details__delete__btn
+                = link_to "削除", photo_path(@photo), method: :delete, data: {confirm: "削除しますか？"}, class: "details-delete__text"
         .photo-details__title 
           = @photo.title
 
