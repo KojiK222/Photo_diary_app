@@ -22,8 +22,8 @@
 ![投稿作成画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/7dfabb6c7d920bd4a90261ddd5df724a.png)
 ユーザーの投稿するタイトル、写真、内容を作成することができます。
 ## 投稿詳細表示画面
-![投稿詳細表示画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/3361fd37fde8c493d4ead004a019ba09.gif)
-タイトル、写真、文章といった、投稿した写真から感じたことなどを日記のような形で見ることができます。また、その投稿したモノに対して、ユーザー同士でお互い思ったことをコメントし合うことができます。投稿したモノの編集は投稿した本人しかできない設定になっています。このアプリに登録していない人でも、コメントはすることはできませんが、投稿したモノとユーザー同士でのコメントは見ることができます。
+![投稿詳細表示画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/4b64e9fcf2bb2b814d378382ef6d8b3c.gif)
+タイトル、写真、文章といった、投稿した写真から感じたことなどを日記のような形で見ることができます。また、その投稿したモノに対して、ユーザー同士でお互い思ったことをコメントし合うことができます。投稿したモノの編集や削除は投稿した本人しかできない設定になっています。このアプリに登録していない人でも、コメントはすることはできませんが、投稿したモノとユーザー同士でのコメントは見ることができます。
 ## 投稿詳細編集画面
 ![投稿詳細編集画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/%E7%B7%A8%E9%9B%86%E7%94%BB%E9%9D%A2.png)
 タイトル、写真、文章の内容を編集することができます。
