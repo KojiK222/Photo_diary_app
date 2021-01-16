@@ -6,36 +6,35 @@
     Photo diary
 
 .SignIn__contents
-  .SignIn__contents__main
-    .SignIn_form
-      = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| 
-        .login__contents
-          .login__contents__title
-            ログイン
-        
-        .login__facebook
-          .sns__icon
-            = icon('fab', 'facebook-f', class: "facebook-icon")
-          .sns__text
-            = link_to "Facabookでログイン", "#", class: "facebook-btn"
-        
-        .login__twitter
-          .sns__icon
-            = icon('fab', 'twitter', class: "twitter-icon")
-          .sns__text
-            = link_to "Twitterでログイン", "#", class: "twitter-btn"
-        
-        .login__text
-          メールアドレスでログイン
+  .SignIn_form
+    = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| 
+      .login__contents
+        .login__contents__title
+          ログイン
+      
+      .login__facebook
+        .sns__icon
+          = icon('fab', 'facebook-f', class: "facebook-icon")
+        .sns__text
+          = link_to "Facabookでログイン", "#", class: "facebook-btn"
+      
+      .login__twitter
+        .sns__icon
+          = icon('fab', 'twitter', class: "twitter-icon")
+        .sns__text
+          = link_to "Twitterでログイン", "#", class: "twitter-btn"
+      
+      .login__text
+        メールアドレスでログイン
 
-        .Form__field
-          = f.email_field :email, placeholder: "メールアドレス", autofocus: true, class: "input__field"
+      .Form__field
+        = f.email_field :email, placeholder: "メールアドレス", autofocus: true, class: "input__field"
 
-        .Form__field 
-          = f.password_field :password, placeholder: "パスワード", autocomplete: "off", class: "input__field"
-        .forgot__password
-          = link_to "パスワードを忘れた方", "#", class: "forgot__link"
+      .Form__field 
+        = f.password_field :password, placeholder: "パスワード", autocomplete: "off", class: "input__field"
+      .forgot__password
+        = link_to "パスワードを忘れた方", "#", class: "forgot__link"
 
-        .actions
-          = f.submit "ログイン", class: "login__btn"
+      .actions
+        = f.submit "ログイン", class: "login__btn"
 
