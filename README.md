@@ -28,8 +28,8 @@
 ![投稿詳細編集画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/%E7%B7%A8%E9%9B%86%E7%94%BB%E9%9D%A2.png)
 タイトル、写真、文章の内容を編集することができます。
 ## ユーザーマイページ画面
-![ユーザーマイページ画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%83%9E%E3%82%A4%E3%83%9A%E3%83%BC%E3%82%B8.jpg)
-アプリ内でのユーザー自身の情報や今まで投稿してきた写真を見ることができます。プロフィールはそのユーザー本人しか編集できない設定になっています。写真をクリックすれば、その写真の詳細画面に移動できます。
+![ユーザーマイページ画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/671263913af1454af5eec6739e71da84.jpg)
+アプリ内でのユーザー自身の情報や今まで投稿してきた写真を見ることができます。プロフィールはそのユーザー本人しか編集できない設定になっています。写真をクリックすれば、その写真の詳細画面に移動できます。フォロー、フォロワーをクリックするとそれぞれの一覧ページに移動します。
 ## プロフィール編集画面
 ![プロフィール編集画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/a1148d3612f75a566fb5a5455a3b022e.png)
 すでに登録しているユーザーの名前、プロフィール、プロフィール写真、メールアドレスを変更することができます。
