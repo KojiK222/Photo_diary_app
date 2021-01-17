@@ -314,11 +314,18 @@
   margin-right: auto;
   width: 940px;
   display: flex;
-  .index__diaries {
-    width: 600px;
+  .index__diaries__space {
+    width: 630px;
+    padding-right: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    .index__diaries {
+      width: 600px;
+      height: 860px;
+    }
   }
   .index__users {
-    margin-left: 50px;
+    margin-left: 30px;
     width: 290px;
     .index__current__user {
       height: 80px;
@@ -326,16 +333,12 @@
       border-radius: 10px;
       display: flex;
     }
-    // .index__reration__users {
-    //   height: 60px;
-    //   border: 1px solid #e6e6e6;
-    //   border-radius: 10px;
-    // }
   }
 }
 
 .index__diaries__contents {
   margin-bottom: 60px;
+  width: 600px;
 }
 .diary__user {
   height: 60px;
@@ -361,10 +364,14 @@
     margin-top: 5px;
   }
 }
+
+// 投稿写真の大きさ
+
 .post__diary {
   width: 600px;
   height: 700px;
 }
+
 .diary__icon__contents {
   height: 40px;
   border-left: 1px solid #e6e6e6;
