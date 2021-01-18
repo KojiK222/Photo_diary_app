@@ -15,4 +15,5 @@ Rails.application.routes.draw do
     resource :favorites, only: [:create, :destroy]
   end
 
+  get '/photo/hashtag/:name', to: "photos#hashtag"
 end

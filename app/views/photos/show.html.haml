@@ -35,6 +35,7 @@
 
           .photo-details__body
             = simple_format @photo.body
+            = render_with_hashtags(@photo.caption)
       
       .comment__contents
         .users__comments

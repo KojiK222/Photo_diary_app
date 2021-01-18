@@ -5,6 +5,7 @@ class CreatePhotos < ActiveRecord::Migration[6.0]
       t.string :title
       t.text :body
       t.string :image_id
+      t.text :hashbody
 
       t.timestamps
     end
