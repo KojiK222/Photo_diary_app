@@ -46,14 +46,8 @@ class PhotosController < ApplicationController
     redirect_to root_path
   end
 
-  def hashtag
-    @user = current_user
-    @tag = Hashtag.find_by(hashname: params[:name])
-    @photos = @tag.photos
-  end
-
   private
   def photo_params
-    params.require(:photo).permit(:title, :body, :image)
+    params.require(:photo).permit(:title, :body, :image, :hashbody, hashtag_ids: [])
   end
 end

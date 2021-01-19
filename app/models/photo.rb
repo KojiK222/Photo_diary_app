@@ -19,23 +19,23 @@ class Photo < ApplicationRecord
   has_many :hashtags, through: :photo_hashtag_relations
 
   after_create do
-    post_image = PostImage.find_by(id: id)
+    photo = Photo.find_by(id: id)
     # hashbodyに打ち込まれたハッシュタグを検出
     hashtags = hashbody.scan(/[#＃][\w\p{Han}ぁ-ヶｦ-ﾟー]+/)
     hashtags.uniq.map do |hashtag|
       # ハッシュタグは先頭の#を外した上で保存
       tag = Hashtag.find_or_create_by(hashname: hashtag.downcase.delete('#'))
-      post_image.hashtags << tag
+      photo.hashtags << tag
     end
   end
   #更新アクション
   before_update do
-    post_image = PostImage.find_by(id: id)
-    post_image.hashtags.clear
+    photo = Photo.find_by(id: id)
+    photo.hashtags.clear
     hashtags = hashbody.scan(/[#＃][\w\p{Han}ぁ-ヶｦ-ﾟー]+/)
     hashtags.uniq.map do |hashtag|
       tag = Hashtag.find_or_create_by(hashname: hashtag.downcase.delete('#'))
-      post_image.hashtags << tag
+      photo.hashtags << tag
     end
   end
 end
