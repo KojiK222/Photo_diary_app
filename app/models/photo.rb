@@ -21,19 +21,9 @@ class Photo < ApplicationRecord
   after_create do
     photo = Photo.find_by(id: id)
     # hashbodyに打ち込まれたハッシュタグを検出
-    hashtags = hashbody.scan(/[#＃][\w\p{Han}ぁ-ヶｦ-ﾟー]+/)
+    hashtags = photo.scan(/[#＃][\w\p{Han}ぁ-ヶｦ-ﾟー]+/)
     hashtags.uniq.map do |hashtag|
       # ハッシュタグは先頭の#を外した上で保存
-      tag = Hashtag.find_or_create_by(hashname: hashtag.downcase.delete('#'))
-      photo.hashtags << tag
-    end
-  end
-  #更新アクション
-  before_update do
-    photo = Photo.find_by(id: id)
-    photo.hashtags.clear
-    hashtags = hashbody.scan(/[#＃][\w\p{Han}ぁ-ヶｦ-ﾟー]+/)
-    hashtags.uniq.map do |hashtag|
       tag = Hashtag.find_or_create_by(hashname: hashtag.downcase.delete('#'))
       photo.hashtags << tag
     end

@@ -1,7 +1,0 @@
-%h2
-  ハッシュタグ # =@tag.hashname
-%ul
-  - @photos.each do |photo|
-    %li
-      = link_to photo_path(photo.id) do
-        = image_tag photo.image.variant(gravity: :center, resize:"640x640^", crop:"640x640+0+0"), if photo.image.attached?

@@ -14,7 +14,4 @@ Rails.application.routes.draw do
     resources :comments, only: :create
     resource :favorites, only: [:create, :destroy]
   end
-
-  get '/photo/hashtag/:name' => 'photo#hashtag'
-  get '/photo/hashtag' => 'photo#hashtag'
 end

@@ -35,7 +35,9 @@
 
           .photo-details__body
             = simple_format @photo.body
-          = render_with_hashtags(@hoto.hashbody) 
+          - if @photo.tags.any?
+            - @photo.tags.each do |tag|
+              = tag.name
       
       .comment__contents
         .users__comments
