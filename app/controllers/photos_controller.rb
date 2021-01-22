@@ -45,9 +45,9 @@ class PhotosController < ApplicationController
     photo.destroy
     redirect_to root_path
   end
-  
+
   private
   def photo_params
-    params.require(:photo).permit(:title, :body, :image, :hashbody)
+    params.require(:photo).permit(:title, :body, :image)
   end
 end
