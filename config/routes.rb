@@ -15,4 +15,7 @@ Rails.application.routes.draw do
     resource :favorites, only: [:create, :destroy]
   end
 
+  # get 'talks', to: 'talks#index'
+  resources :talks
+
 end
