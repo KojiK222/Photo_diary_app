@@ -21,4 +21,7 @@ class User < ApplicationRecord
   end
 
   validates :username, presence: true
+
+  has_many :messages, dependent: :destroy
+  has_many :entries, dependent: :destroy
 end
