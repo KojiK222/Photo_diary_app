@@ -28,7 +28,7 @@
                   = form_for @talkroom do |f|
                     = fields_for @entry do |e|
                       = e.hidden_field :user_id, value: @user.id
-                    = f.submit "チャットを始める", class:"btn btn-primary btn-lg user-show-chat"
+                    = f.submit "メッセージ", class:"talk_btn"
 
         .post-follow__numbers
           .post__numbers__text
