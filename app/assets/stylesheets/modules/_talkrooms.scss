@@ -1,0 +1,32 @@
+// Place all the styles related to the talkrooms controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.talkuser-name {
+  margin-left: auto;
+  margin-right: auto;
+  .talkroom__current-user {
+    display: flex;
+    .talkroom-user {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .talkroom__follow-user {
+    display: flex;
+    .talkroom-user {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
+
+
+
+
+.talkroom__user-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 90px;
+}

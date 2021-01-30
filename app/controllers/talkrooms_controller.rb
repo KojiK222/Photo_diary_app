@@ -3,13 +3,14 @@ class TalkroomsController < ApplicationController
 
   def create
     @talkroom = Talkroom.create
-    @entry1 = Entry.create(room_id: @talkroom.id, user_id: current_user.id)
+    @entry1 = Entry.create(talkroom_id: @talkroom.id, user_id: current_user.id)
     @entry2 = Entry.create(params.require(:entry).permit(:user_id, :talkroom_id).merge(talkroom_id: @talkroom.id))
     redirect_to "/talkrooms/#{@talkroom.id}"
   end
 
   def show
-    @talkroom = Talkoom.find(params[:id])
+    @talkroom = Talkroom.find(params[:id])
+    @user = User.find(params[:id])
     if Entry.where(user_id: current_user.id,talkroom_id: @talkroom.id).present?
       @messages = @talkroom.messages
       @message = Message.new
@@ -18,5 +19,4 @@ class TalkroomsController < ApplicationController
       redirect_back(fallback_location: root_path)
     end
   end
-end
 end
