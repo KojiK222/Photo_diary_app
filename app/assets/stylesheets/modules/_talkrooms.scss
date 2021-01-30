@@ -2,27 +2,27 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.talkuser-name {
-  margin-left: auto;
-  margin-right: auto;
-  .talkroom__current-user {
+.talkroom__body {
+  border-top: solid 1px #e6e6e6;
+  display: flex;
+  .talkusers {
     display: flex;
-    .talkroom-user {
+    width: 200px;
+    height: 100px;
+    .talkroom__current-user {
       width: 100px;
       height: 100px;
     }
-  }
-  .talkroom__follow-user {
-    display: flex;
-    .talkroom-user {
+    .talkroom__follow-user {
       width: 100px;
       height: 100px;
+    }
+    .talkroom__user__name {
+      margin-top: auto;
+      margin-bottom: auto;
     }
   }
 }
-
-
-
 
 
 .talkroom__user-icon {
