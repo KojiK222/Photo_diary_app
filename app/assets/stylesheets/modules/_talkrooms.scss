@@ -4,26 +4,62 @@
 
 .talkroom__body {
   border-top: solid 1px #e6e6e6;
+}
+
+.talkroom__contents {
   display: flex;
-  .talkusers {
-    display: flex;
-    width: 200px;
-    height: 100px;
-    .talkroom__current-user {
-      width: 100px;
-      height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 1100px;
+  height: 470px;
+  .talkroom_current-user {
+    height: 470px;
+    width: 300px;
+    border: solid 2px #e6e6e6;
+    &__content {
+      display: flex;
+      .talkroom__user-icon {
+        width: 100px;
+        height: 100px;
+        border-radius: 90px;
+      }
+      .talkroom__user__name {
+        width: 100px;
+      }
     }
-    .talkroom__follow-user {
+    .send__message {
+      height: 200px;
+      width: 300px;
+      padding: 0 10px;
+      &-field {
+        height: 30px;
+        width: 280px;
+      }
+    }
+  }
+  .talkroom__messages {
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 600px;
+    width: 400px;
+    border: solid 2px #e6e6e6;
+  }
+  .talkroom_follow-user {
+    width: 300px;
+    height: 470px;
+    border: solid 2px #e6e6e6;
+    display: flex;
+    .talkroom__user-icon {
       width: 100px;
       height: 100px;
+      border-radius: 90px;
     }
     .talkroom__user__name {
-      margin-top: auto;
-      margin-bottom: auto;
+      width: 100px;
     }
   }
 }
-
 
 .talkroom__user-icon {
   width: 100px;

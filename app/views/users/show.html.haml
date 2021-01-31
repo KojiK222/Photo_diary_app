@@ -22,8 +22,7 @@
             - unless @user.id == current_user.id
               - if (current_user.followed_by? @user) && (@user.followed_by? current_user)
                 - if @isTalkroom == true
-                  %p.user-show-room
-                    %a.btn.btn-primary.btn-lg{:href => "/talkrooms/#{@talkroomId}"} メッセージ送信
+                  %a.send-talk_btn{:href => "/talkrooms/#{@talkroomId}"} メッセージ送信
                 - else
                   = form_for @talkroom do |f|
                     = fields_for @entry do |e|

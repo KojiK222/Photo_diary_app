@@ -91,7 +91,7 @@
   }
 }
 
-.talk_btn {
+@mixin talk__btns {
   background-color: #fff;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
@@ -103,6 +103,15 @@
   text-align: center;
 }
 
+.talk_btn {
+  @include talk__btns();
+}
+
+.send-talk_btn {
+  @include talk__btns();
+  width: 108px;
+  color: #222;
+}
 
 // フォロー中一覧とフォロワー一覧ページ
 
