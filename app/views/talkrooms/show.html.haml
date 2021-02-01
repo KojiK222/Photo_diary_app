@@ -3,18 +3,18 @@
   .talkroom__body
     .talkroom__contents
       .talkroom_current-user
-        .talk__current-user__content
+        .talkroom__current-user__content
           .talk__current-user
             =link_to user_path(current_user) do
-              = attachment_image_tag current_user, :profile_image, fallback: "no-image.png", class: "talkroom__user-icon"
+              = attachment_image_tag current_user, :profile_image, fallback: "no-image.png", class: "talk__current-icon"
           .talkroom__user__name
             =link_to user_path(current_user) do
               = current_user.username
         .send__message
           = form_for @message do |f|
-            = f.text_field :content, placeholder: "メッセージを入力して下さい" , size: 70, class:"send__message-field"
+            = f.text_field :content, placeholder: "メッセージを入力" , size: 70, class:"send__message-field"
             = f.hidden_field :talkroom_id, value: @talkroom.id
-            = f.submit "投稿",class: 'form-submit'
+            = f.submit "投稿",class: 'talk-submit'
       .talkroom__messages
       .talkroom_follow-user
         .talk__follow-user
