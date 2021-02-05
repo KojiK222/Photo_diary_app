@@ -16,13 +16,19 @@
             = f.hidden_field :talkroom_id, value: @talkroom.id
             = f.submit "投稿",class: 'talk-submit'
       .talkroom__messages
-      .talkroom_follow-user
+      .talkroom__follow-user
         .talk__follow-user
           =link_to user_path(@user) do
-            = attachment_image_tag @user, :profile_image, fallback: "no-image.png", class: "talkroom__user-icon"
-        .talkroom__user__name
-          =link_to user_path(@user) do
-            = @user.username
+            = attachment_image_tag @user, :profile_image, fallback: "no-image.png", class: "talk__follow-icon"
+          .talkroom__follow-user__contents
+            .talkroom__user__name
+              =link_to user_path(@user) do
+                = @user.username
+            .talkroom__follow-user__follows
+              .talkroom__follow__numbers
+                = link_to "フォロー", follows_user_path(@user.id)
+              .talkroom__follower__numbers
+                = link_to "フォロワー", followers_user_path(@user.id)
     -# .chats
     -#   .chat
     -#     - if @messages.present?

@@ -71,24 +71,37 @@
     width: 400px;
     border: solid 2px #e6e6e6;
   }
-  .talkroom_follow-user {
+  .talkroom__follow-user {
     width: 300px;
-    height: 470px;
+    height: 400px;
     border: solid 2px #e6e6e6;
-    display: flex;
-    .talkroom__user-icon {
-      width: 100px;
+    .talk__follow-user {
+      width: 300px;
       height: 100px;
-      border-radius: 90px;
-    }
-    .talkroom__user__name {
-      width: 100px;
+      display: flex;
+      .talk__follow-icon {
+        width: 90px;
+        height: 90px;
+        border-radius: 90px;
+      }
+      &__contents {
+        height: 100px;
+        width: 150px;
+        .talkroom__user__name {
+          width: 50px;
+          height: 30px;
+        }
+        .talkroom__follow-user__follows {
+          display: flex;
+          width: 200px;
+          .talkroom__follow__numbers {
+            width: 50px;
+          }
+          .talkroom__follower__numbers {
+            width: 50px;
+          }
+        }
+      }
     }
   }
-}
-
-.talkroom__user-icon {
-  width: 100px;
-  height: 100px;
-  border-radius: 90px;
 }
