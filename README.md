@@ -125,3 +125,12 @@ VScode
 ## Association
 - belongs_to :user
 - belongs_to :talkroom
+
+## messagesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|content|text|
+## Association
+- validates :content, presence: true
+- belongs_to :user
+- belongs_to :talkroom
