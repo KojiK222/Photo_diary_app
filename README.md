@@ -110,3 +110,18 @@ VScode
 ## Association
 - belongs_to :following
 - belongs_to :follower
+ 
+## talkroomsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|
+## Association
+- has_many :messages, dependent: :destroy
+- has_many :entries, dependent: :destroy
+
+## entriesテーブル
+|Column|Type|Options|
+|------|----|-------|
+## Association
+- belongs_to :user
+- belongs_to :talkroom
