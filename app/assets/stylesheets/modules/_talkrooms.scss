@@ -73,32 +73,47 @@
   }
   .talkroom__follow-user {
     width: 300px;
-    height: 400px;
+    height: 110px;
     border: solid 2px #e6e6e6;
-    .talk__follow-user {
+    border-radius: 20px;
+    &__contents {
       width: 300px;
       height: 100px;
       display: flex;
-      .talk__follow-icon {
+      .talk__follow-user__icon {
         width: 90px;
         height: 90px;
-        border-radius: 90px;
-      }
-      &__contents {
-        height: 100px;
-        width: 150px;
-        .talkroom__user__name {
-          width: 50px;
-          height: 30px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 20px;
+        .talk__follow-icon {
+          width: 90px;
+          height: 90px;
+          border-radius: 90px;
         }
-        .talkroom__follow-user__follows {
+      }
+      .talk__follow-user__nums {
+        height: 100px;
+        width: 170px;
+        .talk__follow-user__name {
+          padding-top: 16px;
+          padding-right: 30px;
+          height: 50px;
+          text-align: center;
+          font-weight: bold;
+          font-size: 18px;
+        }
+        .talk__follow__follower {
+          height: 50px;
+          padding-top: 10px;
           display: flex;
-          width: 200px;
-          .talkroom__follow__numbers {
-            width: 50px;
+          .talk__follow-num {
+            width: 75px;
+            font-weight: bold;
           }
-          .talkroom__follower__numbers {
-            width: 50px;
+          .talk__follower-num {
+            width: 95px;
+            font-weight: bold;
           }
         }
       }
