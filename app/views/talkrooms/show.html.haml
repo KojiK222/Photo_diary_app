@@ -16,6 +16,16 @@
             = f.hidden_field :talkroom_id, value: @talkroom.id
             = f.submit "投稿",class: 'talk-submit'
       .talkroom__messages
+        .talkroom__messages__contents
+          - if @messages.present?
+            - @messages.each do |m|
+              .message__user-icon
+                = link_to user_path(m.user) do
+                  = attachment_image_tag m.user, :profile_image, fallback: "no-image.png", class: "message-user__image"
+              .message__user-text
+                = simple_format m.content
+              -# .message__time
+              -#   = m.created_at.strftime("%Y-%m-%d %H:%M")
       .talkroom__follow-user
         .talkroom__follow-user__contents
           .talk__follow-user__icon
@@ -30,18 +40,3 @@
                 = link_to "フォロー", follows_user_path(@user.id)
               .talk__follower-num
                 = link_to "フォロワー", followers_user_path(@user.id)
-
-    -# .chats
-    -#   .chat
-    -#     - if @messages.present?
-    -#       - @messages.each do |m|
-    -#         .chat-box
-    -#           .talkroom-user
-    -#             = attachment_image_tag m.user, :profile_image, fallback: "no-image.png", class: "talkroom__user-icon"
-    -#           .chat-hukidashi
-    -#             %strong= m.content
-    -#             %br/
-    -#             = m.created_at.strftime("%Y-%m-%d %H:%M")
-                -# - @entries.each do |e|
-                -# {:href => "/users/#{current_user.id}"}
-                -# {:href => "/users/#{@user.id}"}

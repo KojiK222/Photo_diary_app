@@ -70,6 +70,29 @@
     height: 600px;
     width: 400px;
     border: solid 2px #e6e6e6;
+    overflow:hidden;
+    overflow-y:scroll;
+    &__contents {
+      display: flex;
+      padding: 10px;
+      .message__user-icon {
+        height: 50px;
+        width: 50px;
+        .message-user__image {
+          height: 50px;
+          width: 50px;
+          border-radius: 90px;
+        }
+      }
+      .message__user-text {
+        border: 1px solid #dddddd;
+        border-radius: 10px;
+        background-color: #dddddd;
+        padding: 10px 10px 0 10px;
+        margin-left: 10px;
+        margin-right: 5px;
+      }
+    }
   }
   .talkroom__follow-user {
     width: 300px;
