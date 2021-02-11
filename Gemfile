@@ -63,3 +63,5 @@ gem 'rails_12factor', group: :production
 
 gem 'bootstrap', '~> 4.4.1'
 gem 'jquery-rails'
+
+gem 'mysql2', '>= 0.4.4', group: :production
