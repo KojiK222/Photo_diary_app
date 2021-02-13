@@ -10,7 +10,6 @@ class TalkroomsController < ApplicationController
 
   def show
     @talkroom = Talkroom.find(params[:id])
-    @user = User.find(params[:id])
     if Entry.where(user_id: current_user.id,talkroom_id: @talkroom.id).present?
       @messages = @talkroom.messages
       @message = Message.new
