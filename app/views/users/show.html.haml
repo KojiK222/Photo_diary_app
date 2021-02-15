@@ -19,15 +19,6 @@
               - else
                 .follow__btn__mypage
                   = link_to "フォローする", user_relationships_path(@user.id), class: "follow__text", method: :post
-            - unless @user.id == current_user.id
-              - if (current_user.followed_by? @user) && (@user.followed_by? current_user)
-                - if @isTalkroom == true
-                  %a.send-talk_btn{:href => "/talkrooms/#{@talkroomId}"} メッセージ送信
-                - else
-                  = form_for @talkroom do |f|
-                    = fields_for @entry do |e|
-                      = e.hidden_field :user_id, value: @user.id
-                    = f.submit "メッセージ", class:"talk_btn"
 
         .post-follow__numbers
           .post__numbers__text
