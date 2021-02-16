@@ -26,6 +26,23 @@
         color: black;
       }
     }
+    .header__seach {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 5px;
+      height: 30px;
+      .search-form {
+        display: flex;
+        margin-left: 100px;
+        .search-input {
+          margin-right: 10px;
+          width: 200px;
+        }
+        .search-btn {
+          width: 50px;
+        }
+      }
+    }
     .current-user__icon {
       margin-left: auto;
       margin-right: 50px;

@@ -10,12 +10,11 @@ Rails.application.routes.draw do
     get :followers, on: :member
   end
 
-  resources :photos do 
+  resources :photos do
     resources :comments, only: :create
+    collection do
+      get 'search'
+    end
     resource :favorites, only: [:create, :destroy]
   end
-
-  resources :messages, only: [:create]
-  resources :talkrooms, only: [:create,:show]
-
 end
