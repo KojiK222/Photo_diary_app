@@ -15,4 +15,12 @@ class Photo < ApplicationRecord
     validates :image
   end
 
+  def self.search(search)
+    if search != ""
+      Photo.where('title LIKE(?)', "%#{search}%")
+    else
+      Photo.all
+    end
+  end
+
 end

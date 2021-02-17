@@ -46,6 +46,10 @@ class PhotosController < ApplicationController
     redirect_to root_path
   end
 
+  def search
+    @photos = Photo.search(params[:keyword])
+  end
+
   private
   def photo_params
     params.require(:photo).permit(:title, :body, :image)
