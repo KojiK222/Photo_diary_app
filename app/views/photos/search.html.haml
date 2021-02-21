@@ -1,9 +1,8 @@
 = render partial: "layouts/header"
 %body
   .search__body
-    - @photos.each do |photo|
-      .search-photo__contents
-        .posted-photo__user
+    .search-photo__contents
+      - @photos.each do |photo|
         .posted-photos
           .searched-photo__title 
             = photo.title
@@ -23,6 +22,9 @@
             - else
               .index__count-num
                 = photo.favorites.count
-            .diary__comments__icon
+            .searched__comments__icon
               = link_to photo_path(photo.id) do
-                = icon('far', 'comment', class: "diary__comments")
+                = icon('far', 'comment', class: "searched__comments")
+            .searched__user__icon
+              = link_to user_path(photo.user) do
+                = attachment_image_tag photo.user, :profile_image, fallback: "no-image.png", class: "seached__user-image"
