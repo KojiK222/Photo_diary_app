@@ -1,10 +1,11 @@
 
 .search__body {
   border-top: solid 1px #e6e6e6;
-  overflow-x: scroll;
-  // overflow:hidden;
+  width: 1425px;
   .search-photo__contents {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     .posted-photos {
       margin-top: 50px;
       margin-left: 75px;
