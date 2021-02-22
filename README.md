@@ -10,7 +10,7 @@
 ユーザーの投稿した写真とその写真から感じとったモノを日記のように書けるアプリを作りました。ユーザーがその時に目に映ったモノに対して感じ取ったことや自分の好みのモノを発信することで、同じように感じたユーザーがコメントを通してお互い会話をすることができます。
 # DEMO
 ## トップページ（投稿一覧）
-![トップページ](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/d3b6b23d7162f09afd35a986cd1fc0c1.gif)
+![トップページ](https://github.com/KojiK222/Photo_diary_app/commit/c16ffeed774368bd6c94d25c0a125b6fe18319e4)
 ユーザーが投稿した写真を見ることができます。ユーザーのアイコンや名前から、ユーザーマイページに移動することができます。また、フォロー機能もついていて、フォローしたりフォローしているユーザーのアカウントが表示されるようになっています。写真を直接クリックすると詳細ページに移動できるようになっています。
 ## 新規登録画面
 ![新規登録画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/%E6%96%B0%E8%A6%8F%E7%99%BB%E9%8C%B2%E7%94%BB%E9%9D%A2.png)
@@ -41,11 +41,9 @@
 ## バックエンド
 Ruby,Ruby on rails
 ## フロントエンド
-Hmal,Sass
+Haml,Sass
 ## データベース
 MySQL,Sequl Pro
-## インフラ
-Heroku
 ## ソース管理
 GitHub,GitHubDesktop
 ## エディタ
