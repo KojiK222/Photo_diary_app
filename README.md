@@ -11,7 +11,7 @@
 # DEMO
 ## トップページ（投稿一覧）
 ![トップページ](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/d3bba9d8e71920ef526a2208e8c6bca2.gif)
-ユーザーが投稿した写真を見ることができます。ユーザーのアイコンや名前から、ユーザーマイページに移動することができます。また、フォロー機能もついていて、フォローしたりフォローしているユーザーのアカウントが表示されるようになっています。写真を直接クリックすると詳細ページに移動できるようになっています。
+ユーザーが投稿した写真を見ることができます。ユーザーのアイコンや名前から、ユーザーマイページに移動することができます。また、フォロー機能もついていて、フォローしたりフォローしているユーザーのアカウントが表示されるようになっています。写真を直接クリックすると詳細ページに移動できるようになっています。投稿検索フォームでは、気になる投稿をタイトルで検索できます。
 ## 新規登録画面
 ![新規登録画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/%E6%96%B0%E8%A6%8F%E7%99%BB%E9%8C%B2%E7%94%BB%E9%9D%A2.png)
 名前、メールアドレス、ユーザーネーム、パスワードを登録することができます。
@@ -37,6 +37,9 @@
 ![フォロー一覧](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/f5a11c56300cd5317c34e4d04900111b.png)
 ![フォロワー一覧](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/2417e0ee5f31a7e43f43b12fd0ffff48.png)
 フォローしているユーザーとフォローされているユーザーの一覧ページです。ユーザーマイページの「フォロー」「フォロワー」という文字をクリックすればそれぞれの一覧ページに移動します。
+## 検索結果画面
+![検索結果画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/d4a552eea5e48f3a4ef3411b9f1b97b7.gif)
+検索した後に移動するページです。検索フォームで入力した文字が含まれたタイトルの投稿された写真が一覧で表示されます。写真をクリックすると投稿詳細表示画面に移動します。投稿された写真のアイコンをクリックするとユーザーマイページに移動します。
 # 使用技術（開発環境）
 ## バックエンド
 Ruby,Ruby on rails
