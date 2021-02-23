@@ -47,7 +47,7 @@ class PhotosController < ApplicationController
   end
 
   def search
-    @photos = Photo.search(params[:keyword])
+    @photos = Photo.search(params[:keyword]).order("created_at DESC")
   end
 
   private
