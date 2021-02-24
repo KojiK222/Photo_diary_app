@@ -33,7 +33,7 @@
       .Form__field 
         = f.password_field :password, placeholder: "パスワード", autocomplete: "off", class: "input__field"
       .forgot__password
-        = link_to "パスワードを忘れた方", "#", class: "forgot__link"
+        = link_to "パスワードを忘れた方", new_user_registration_path , class: "forgot__link"
 
       .actions
         = f.submit "ログイン", class: "login__btn"
