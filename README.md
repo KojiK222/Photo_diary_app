@@ -13,10 +13,10 @@
 ![トップページ](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/d3bba9d8e71920ef526a2208e8c6bca2.gif)
 ユーザーが投稿した写真を見ることができます。ユーザーのアイコンや名前から、ユーザーマイページに移動することができます。また、フォロー機能もついていて、フォローしたりフォローしているユーザーのアカウントが表示されるようになっています。写真を直接クリックすると詳細ページに移動できるようになっています。投稿検索フォームでは、気になる投稿をタイトルで検索できます。
 ## 新規登録画面
-![新規登録画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/%E6%96%B0%E8%A6%8F%E7%99%BB%E9%8C%B2%E7%94%BB%E9%9D%A2.png)
+![新規登録画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/80db220de4ac8f8b61497cdfc99d4c2a.jpg)
 名前、メールアドレス、ユーザーネーム、パスワードを登録することができます。
 ## ログイン画面
-![ログイン画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E7%94%BB%E9%9D%A2.png)
+![ログイン画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/4085bb3df65f8d37ecd6bee2aa7b71b7.jpg)
 すでに登録してあるユーザーが、メールアドレスとパスワードでログインすることができます。
 ## 投稿作成画面
 ![投稿作成画面](https://github.com/KojiK222/Photo_diary_app/blob/master/app/assets/images/gazo_gif/7dfabb6c7d920bd4a90261ddd5df724a.png)
