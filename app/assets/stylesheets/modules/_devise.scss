@@ -156,7 +156,13 @@
 //新規会員登録ページ
 
 .SignUp__body {
-  margin-top: 50px;
+  // margin-top: 50px;
+  padding-top: 100px;
+  background-image: url(7dc412d44d6ac37a54e8b13a8c136f20.jpg);
+  background-repeat : no-repeat;
+  background-size: cover;
+  background-position: right;
+  height: 750px;
 }
 .SignUp__contents {
   height: 568px;
