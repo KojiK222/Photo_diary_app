@@ -40,13 +40,20 @@
   font-family: cursive;
   font-weight: 600;
   font-size: 30px;
-  text-align: center;
+  // text-align: center;
+  // margin-left: auto;
+  margin-right: auto;
 }
 
 // ログインホーム
 
 .SignIn__contents {
-  padding-top: 50px;
+  padding-top: 120px;
+  background-image: url(7dc412d44d6ac37a54e8b13a8c136f20.jpg);
+  background-repeat : no-repeat;
+  background-size: cover;
+  background-position: right;
+  height: 750px;
 }
 
 .SignIn_form {
